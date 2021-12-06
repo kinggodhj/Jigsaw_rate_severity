@@ -13,4 +13,6 @@ cf) https://lovit.github.io/dataset/2019/01/16/get_reddit/
 
 pip isntall praw
 
+#Reddit auth: https://www.reddit.com/prefs/apps
+
 ```
