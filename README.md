@@ -3,7 +3,7 @@
 
 [Jigsaw Rate Severity of Toxic Comments](https://www.kaggle.com/c/jigsaw-toxic-severity-rating/overview)
 
-Firstly, using the ["Ruddit" data] (https://github.com/hadarishav/Ruddit/tree/main/Dataset)
+Firstly, using the ["Ruddit" data](https://github.com/hadarishav/Ruddit/tree/main/Dataset)
 
 Crawling the comment using comment id from Ruddit data
 
