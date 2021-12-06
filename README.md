@@ -30,5 +30,9 @@ import praw
 reddit = praw.Reddit(client_id = 'qxVQztn8sSzupnPuqVE3lA',
                      client_secret = 'ByQJzTCkTAHzy0tU5M6Tj18GUiO3Eg',
                      user_agent = 'Heejin')
-                     
+                                   
 ```
+
+### Data augmentation
+
+[Back-translation](https://dzlab.github.io/dltips/en/pytorch/text-augmentation/)
