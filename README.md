@@ -24,15 +24,32 @@
 
 - RoBERTa + triplet Ranking Loss (lower performance)
 
+- RoBERTa + MSE Loss
 
 ### score
 
 - Data1 + Data2 + Data3 + Ridge model: 0.846  
 
-- Data1 + Cleaned Data1 + Data3 + Ridge model + RoBERTa (toxic severity validation data): 0.854
+- RoBERTa + Margin Ranking Loss
+  
+  0.9 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.1 (RoBERTa (toxic severity validation data)): 0.845
 
-- Data1 + Cleaned Data1 + Data3 + Ridge model + RoBERTa (toxic severity validation data + data1): 0.837
+  0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.854
 
+  0.8 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.2 (RoBERTa (toxic severity validation data)): 0.843
+  
+- RoBERTa + Margin Ranking Loss + More data
+  
+  Data1 + Cleaned Data1 + Data3 + Ridge model + RoBERTa (toxic severity validation data + data1): 0.832
+
+- RoBERTa + MSE Loss
+
+  0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.837
+
+- RoBERTa + triplet Loss
+  
+  0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data + data1)): 0.825
+  
 
 ## Ideas
 
