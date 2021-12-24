@@ -18,7 +18,7 @@
 
 - Ligression (too slow)
 
-- Lasso (lower performance)
+- ~~Lasso (lower performance)~~
 
 - RoBERTa + Margin Ranking Loss
 
@@ -60,6 +60,11 @@
 - Finding out the wegith ratio of each method
 
 - HateBERT
+
+## To do
+
+- make evaluation metric 
+
 
 ## Comment
 
