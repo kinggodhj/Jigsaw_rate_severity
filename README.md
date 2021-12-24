@@ -42,7 +42,10 @@
 
 - Finding out the wegith ratio of each method
 
+- HateBERT
 
 ## Comment
 
 - Generate a predicted score for all of the less_toxic and more_toxic comments and calculate the proportion of scores where less_toxic < more_toxic. This is the same way that the leaderboard scores are calculated.
+
+- Hypothesis: Tech companies fillter the "toxic" words in training datasets -> try "HateBERT"
