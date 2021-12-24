@@ -1,37 +1,25 @@
-# Jigsaw_rate_severity
+# [Jigsaw Rate Severity of Toxic Comments](https://www.kaggle.com/c/jigsaw-toxic-severity-rating/overview)
 
-
-## [Jigsaw Rate Severity of Toxic Comments](https://www.kaggle.com/c/jigsaw-toxic-severity-rating/overview)
-
-Firstly, using the ["Ruddit" data](https://github.com/hadarishav/Ruddit/tree/main/Dataset)
 
 ### Train data
 
-- [Toxic classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)
+- Data1: [Toxic classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)
 
-- [Recognizing toxicity & Reducing bias](https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification/data)
+- Data2: [Recognizing toxicity & Reducing bias](https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification/data)
 
-- [Translation + Toxic classification](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/data)
+- Data3: ruddit dataset
 
-
-Crawling the comment using comment id from Ruddit data
-
-cf) https://lovit.github.io/dataset/2019/01/16/get_reddit/
-
-```
-pip isntall praw
-
-#Reddit auth: https://www.reddit.com/prefs/apps
-```
+- Data4: [Translation + Toxic classification](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/data)
 
 
-```
-import praw
-reddit = praw.Reddit(client_id = 'qxVQztn8sSzupnPuqVE3lA',
-                     client_secret = 'ByQJzTCkTAHzy0tU5M6Tj18GUiO3Eg',
-                     user_agent = 'Heejin')
-                                   
-```
+# score
+
+- Data1 + Data2 + Data3 + Ridge model: 0.846  
+
+- Data1 + Cleaned Data1 + Data3 + Ridge model + RoBERTa (toxic severity validation data): 0.854
+
+- Data1 + Cleaned Data1 + Data3 + Ridge model + RoBERTa (toxic severity validation data + data1): 0.837
+
 
 ### Data augmentation
 
