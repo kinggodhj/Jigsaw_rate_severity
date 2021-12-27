@@ -28,7 +28,9 @@
 
 ### score
 
-- Data1 + Data2 + Data3 + Ridge model: 0.846  
+- TF-IDF(data 1,2,3) + Ridge model: 0.846  
+
+- Word2vec(data1, clean data1, 3) + Ridge model: 0.7
 
 - RoBERTa + Margin Ranking Loss
   
@@ -37,6 +39,9 @@
   0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.854
 
   0.8 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.2 (RoBERTa (toxic severity validation data)): 0.843
+  
+  Word2vec + 0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.816
+  
   
 - RoBERTa + Margin Ranking Loss + More data
   
@@ -54,6 +59,10 @@
 ## Ideas
 
 - ~~triplet loss~~ 
+
+- ~~Word2vec~~
+
+- Increasing the number of "n fold"
 
 - Back translation ([Data augmentation](https://dzlab.github.io/dltips/en/pytorch/text-augmentation/)) 
 
