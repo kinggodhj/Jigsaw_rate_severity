@@ -67,6 +67,10 @@
 
 - Increasing the number of "n fold"
 
+- MSE -> Cross entropy (Binary classification)
+
+- Word2vec + TF-IDF
+
 - Back translation ([Data augmentation](https://dzlab.github.io/dltips/en/pytorch/text-augmentation/)) 
 
 - Finding out the wegith ratio of each method
