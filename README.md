@@ -51,6 +51,9 @@
 
   0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.837
 
+  0.85 (Cleaned Data1 + Data2 + Data3+ Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.839
+
+
 - RoBERTa + triplet Loss
   
   0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data + data1)): 0.825
