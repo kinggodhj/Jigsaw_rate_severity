@@ -28,11 +28,12 @@
 
 ### score
 
-- TF-IDF(data 1,2,3) + Ridge model: 0.846  
 
-- Word2vec(data1, clean data1, 3) + Ridge model: 0.7
+- **TF-IDF(data 1,2,3) + Ridge model**: 0.846  
 
-- RoBERTa + Margin Ranking Loss
+- Word2vec(data1, clean data1, 3) + Ridge model: 0.70
+
+- **RoBERTa + Margin Ranking Loss**
   
   0.9 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.1 (RoBERTa (toxic severity validation data)): 0.845
 
@@ -42,19 +43,22 @@
   
   Word2vec + 0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.816
   
-  
-- RoBERTa + Margin Ranking Loss + More data
+- **RoBERTa + Margin Ranking Loss + More data**
   
   Data1 + Cleaned Data1 + Data3 + Ridge model + RoBERTa (toxic severity validation data + data1): 0.832
 
-- RoBERTa + MSE Loss
+- **RoBERTa + MSE Loss**
 
   0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.837
 
   0.85 (Cleaned Data1 + Data2 + Data3+ Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.839
 
+- **RoBERTa + BCE Loss**
+  
+  0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data)): 0.820
 
-- RoBERTa + triplet Loss
+
+- **RoBERTa + triplet Loss**
   
   0.85 (Data1 + Cleaned Data1 + Data3 + Ridge model) + 0.15 (RoBERTa (toxic severity validation data + data1)): 0.825
   
@@ -67,7 +71,9 @@
 
 - Increasing the number of "n fold"
 
-- MSE -> Cross entropy (Binary classification)
+- Pre-processing input text
+
+- ~~MSE -> Cross entropy (Binary classification)~~
 
 - Word2vec + TF-IDF
 
