@@ -95,3 +95,5 @@
 - Hypothesis: Tech companies fillter the "toxic" words in training datasets -> try ["HateBERT"](https://www.kaggle.com/c/jigsaw-toxic-severity-rating/discussion/288788)
 
 - Toxic word [list](https://www.kaggle.com/c/jigsaw-toxic-severity-rating/discussion/287173)
+
+- Previous competitions' classification [model](https://github.com/unitaryai/detoxify)
